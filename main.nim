@@ -15,6 +15,7 @@ proc toExe(fileName: string): string =
 proc build(fileName: string, outputFileName: string) =
     let my_sis = "E:\\Projects\\MY_SIS"
     let errCode = execCmd("nim c --out:" & outputFileName.toExe & " --outdir:" & my_sis & " " & fileName.toNim)
+    #errCode is the same name as errCOde and e_r_r_C_o_d_e :)
     if errCOde != 0:
         echo errCOde
 
